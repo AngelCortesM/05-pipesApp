@@ -24,18 +24,28 @@ export class MenuComponent {
               this.router.navigate(['/']);
             },
           },
-          { label: 'Números', icon: 'pi pi-dollar',  command: () => {
-            this.router.navigate(['/numbers']);
-          },},
-          { label: 'No comunes', icon: 'pi pi-globe', command: () => {
-            this.router.navigate(['/uncommon']);
-          }, },
+          {
+            label: 'Números',
+            icon: 'pi pi-dollar',
+            command: () => {
+              this.router.navigate(['/numbers']);
+            },
+          },
+          {
+            label: 'No comunes',
+            icon: 'pi pi-globe',
+            command: () => {
+              this.router.navigate(['/uncommon']);
+            },
+          },
         ],
       },
       {
         label: 'Pipes Personalizados',
         icon: 'pi pi-cog',
-        items: [{ label: 'Otro Elemento', icon: 'pi pi-cog' }],
+        items: [
+          { label: 'Custom Pipes', icon: 'pi pi-cog', routerLink: 'custom' },
+        ],
       },
     ];
   }

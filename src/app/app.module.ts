@@ -12,6 +12,7 @@ import { SharedModule } from './shared/shared.module';
 import localeEsHN from '@angular/common/locales/es-HN';
 import localeFrCA from '@angular/common/locales/fr-CA';
 import { registerLocaleData } from '@angular/common';
+import { ToolbarModule } from 'primeng/toolbar';
 
 registerLocaleData(localeEsHN);
 registerLocaleData(localeFrCA);
@@ -22,6 +23,7 @@ registerLocaleData(localeFrCA);
     BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
+    ToolbarModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'es-HN' },
